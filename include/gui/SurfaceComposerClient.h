@@ -87,6 +87,10 @@ public:
     static ssize_t getDisplayOrientation(int32_t displayId);
 #endif
 
+#if defined(TOROPLUS_RADIO)
+    static status_t getDisplayInfo(int32_t displayId, DisplayInfo* info);
+#endif
+
     // ------------------------------------------------------------------------
     // surface creation / destruction
 

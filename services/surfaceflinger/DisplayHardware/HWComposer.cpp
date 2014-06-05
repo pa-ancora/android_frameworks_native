@@ -1108,6 +1108,7 @@ public:
             getLayer()->flags &= ~HWC_SKIP_LAYER;
         }
     }
+
     virtual void setAnimating(bool animating) {
         // Not bothering for legacy path
     }
@@ -1142,6 +1143,7 @@ public:
         SharedBuffer const* sb = reg.getSharedBuffer(&visibleRegion.numRects);
         visibleRegion.rects = reinterpret_cast<hwc_rect_t const *>(sb->data());
     }
+
 #ifdef QCOM_BSP
     virtual void setDirtyRect(const Rect& dirtyRect) {
         // Unimplemented

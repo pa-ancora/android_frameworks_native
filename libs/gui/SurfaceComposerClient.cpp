@@ -683,6 +683,7 @@ ssize_t SurfaceComposerClient::getDisplayOrientation(int32_t displayId) {
     getDisplayInfo(getBuiltInDisplay(displayId), &info);
     return info.orientation;
 }
+
 #endif
 
 // ----------------------------------------------------------------------------
